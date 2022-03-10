@@ -1,0 +1,228 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+header{ 
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+nav {
+	height: 52px;
+	background: #212121;
+
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 70px;
+	margin: 0;
+	list-style: none;
+
+}
+
+.menu .menu_link {
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.menu .menu_item {
+	border-right: 2px dotted black; /*dotted пунктирная граница*/
+	padding-right: 28px;
+}
+
+
+.menu .menu_item:last-child {
+	border-right: none; /*dotted пунктирная граница*/
+	padding-right: 28px;
+}
+
+.subheader {
+ 	position: absolute;/*чтобы завести блок за меню, в этом меню делаем абсолют, родителю релатив, и указ ширину 100%*/
+	width: 100%;
+	height: 85px;
+	background: rgba(0,0,0, .6); /*Вмст. opacity исп. rgba для уст. прозрачности 60% - .6 */
+
+}
+
+.subheader .subheader_logo {
+	display: block;
+	max-width: 100%; /*Это поможет если логотип будет больше чем нынешний и чтобы он не вышел за пределы уст. колонки, и будет 100% от колонки*/
+	margin-top: 19px;
+}
+
+.subheader .subheader_text {
+	margin-top: 6px;
+	opacity: 0.5;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+.subheader .subheader_call {
+	margin-top: 19px;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.subheader .subheader_phone {
+	display: block;
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.subheader .subheader_btn {
+	width: 172px;
+	height: 46px;
+	margin-top: 19px;
+	border: none;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+	min-height: 800px;
+	padding: 151px 0 135px 0;
+	background: url(../img/bg/uber_bg.png) center center/cover no-repeat;
+}
+
+.promo .promo_header {
+	margin: 0;
+	font-weight: 900;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.promo .promo_subheader {
+	margin: 0;
+	margin-top: 23px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.promo .promo_descr {
+	margin-top: 23px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.promo_btn {
+	display: block;
+	margin: 118px auto 0 auto;
+	width: 259px;
+	height: 63px;
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+	border: none;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.benefits {
+	min-height: 767px;
+	padding: 18px 0 64px 0;
+}
+
+.benefits .label {
+	width: 115px;
+	height: 27px;
+	display: block;
+	margin: 0 auto;
+	padding: 8px 0;
+	background: #000000;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.benefits .title{
+	margin: 33px 0 16px 0;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #222222;
+}
+
+.benefits .benefits_block {
+	display: flex;
+	justify-content:center;
+	align-items: center; /*флексы исп чтобы заголовок и текст не были в одной строке и они были по центру соотн иконке*/
+	margin-bottom: 30px;
+	min-height: 151px;
+	
+	
+}
+
+.benefits .benefits_block .benefits_card {
+ 	margin-right: 50px;
+	width: 343px;
+	/* height: 150px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+.benefits .benefits_block .benefits_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center; /*все флексы исп чтобы поставить изображ по центру*/
+	min-width: 116px;
+	height: 116px;
+	background: #1EACC7;
+	border-radius: 100%; /*из блока сделать круг*/
+	margin-right: 25px;
+}
+
+
+
+.benefits .benefits_block .benefits_card_header  {
+	font-size: 17px;
+	color: #1EACC7;
+}
+
+.benefits .benefits_block .benefits_card_text {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 21px;
+	align-items: center;
+	color: #202020;
+}
+
